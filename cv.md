@@ -28,7 +28,8 @@ I have good interpersonal skills, am an excellent team worker and very willing t
 
 ## Education
 * University: P.O.Sukhoi State Technical University of Gomel
-* Courses :  [RS School](https://rs.school/) 
+* Courses :  [RS School](https://rs.school/) JavaScript Development
+
 
 ## English 
 A2 (I had been practicing English)
