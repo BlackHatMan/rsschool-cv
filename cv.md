@@ -3,7 +3,8 @@
 ## Contact
 
 * Location: Minsk, Belarus
-* Phone: +3754478550**
+* Discord: Vik#5398
+* Phone: +37544785507*
 * Email: ecartman41@gmail.com
 * GitHub: [Viktor](https://github.com/BlackHatMan)
 
