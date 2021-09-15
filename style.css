@@ -8,6 +8,9 @@
 a{
     color: white;
 }
+a:hover{
+    color: red;
+}
 h1{ 
     padding: 15px 10px;
     font-weight: 600;
@@ -93,7 +96,18 @@ section{
     justify-content: space-between;
     height: 60px;
     background-color: #343945;
-    color: white;
+    color: #ffffff;
     align-items: center;
     padding: 0 55px;
+}
+.rs_link{        
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 50px;   
+    background-color: white;
+    -webkit-mask-image: url('./rs_school_logo.svg');
+    mask-image: url('./rs_school_logo.svg');
+}
+.rs_link:hover{
+    background-color: red;
 }
