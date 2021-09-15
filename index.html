@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+    <div class="container"> 
+        <div class="left_side">
+            <img src="./avatarka.jpg" alt="Photo">
+            <section class="contact">
+                <h2> Contact</h2>
+                <ul class="contact_items">
+                   <li> Phone  <a href="#"> +375 29 9379992 </a></li>            
+                   <li> Email  <a href="#"> ecartman41@gmail.com </a></li>            
+                   <li> Address:  Belarus, Minsk </li>            
+                </ul>
+            </section>
+            <section class="education">
+                <h2> Education</h2>
+                <ul>
+                   <li class="education_item"> 2013-2018 <br> P.O.Sukhoi State Technical University of Gomel,
+
+                    Power supply for industrial enterprises</li>            
+                   <li class="education_item"> 2021 <br>  <a href="https://rs.school/"> RS School </a></li>            
+                           
+                </ul>
+            </section>
+        </div>
+
+
+
+        <div class="right_side">
+            <div class="presentation">           
+            <h1> Victor Oleshkevich</h1>
+            <p>Front-End developer </p>
+        </div>
+            <section class="About_me">
+                <h2>About me</h2>
+                <p> I like to study and learn something new. I like to read books, do physical education, 
+                    listen to music of different genres. I'm fond of good cars and bikes. I lead active and 
+                    healhy lifestyle. I like to work and see the results of my work.
+                    Since childhood, I have had a predisposition to work with electronics and computers. I 
+                    like to disassemble, assemble and configure something. I can build, configure, solve
+                     problems with computers.</p>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul class="skills_items">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                  
+                </ul>
+            </section>
+            <section class="key_strengths">
+                <h2>Key strengths</h2>
+                <ul class="key_strengths_items">
+                    <li >Hardworking</li>
+                    <li >Responsible</li>
+                    <li >Sociable</li>
+                    <li >Quick learner</li>
+                    <li >Goal-oriented</li>
+                    <li >Conscientious</li>
+                </ul>
+            </section>
+
+            <section class="code_example">
+                <h2>Code Example</h2>
+                <details class="dropdown">
+                    <summary> ▼ info</summary>
+                    <pre class="code_in_dropdown">let message = document.querySelector('.message')
+                        let addMessage = document.querySelector('.addMessage')
+                        let todo = document.querySelector('.todo')
+                        
+                        let state =[];
+                        function  addPost(){
+                            if(message.value!='') {
+                                state.push(message.value)
+                            }
+                            message.value = '' ;
+                         console.log(state)
+                            DisplayMessage();
+                        }
+                        
+                        function  DisplayMessage() {
+                            let text ='';
+                            state.forEach(p => {
+                                text += /* validator doesn't want pass my template string*/`
+                                todo.innerHTML = text;
+                            })
+                        }
+                        
+                         document.querySelector('.Title').addEventListener('mouseenter',() =>
+                        {
+                         document.querySelector('.Title').style = 'color:green'
+                        })
+                        
+                        addMessage.addEventListener('click', addPost)
+                        </pre>
+                </details>
+            </section>
+        </div>
+       
+    </div>
+    <footer class="footer">
+        
+        <a target="_blank" href="https://github.com/BlackHatMan"> Github</a>
+        <p> 2021</p>
+        <a target="_blank" href="https://rs.school/"> RS School</a>
+    </footer>
+    
+    
+</body>
+
+
+</html>
