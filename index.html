@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/agate.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>     
+    <script>hljs.highlightAll()</script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+ 
     <title>CV</title>
     <link rel="stylesheet" href="./style.css" >
 </head>
 <body>
+    
     <main class="container"> 
         <div class="left_side">
-            <img src="./ava.jpg" alt="Photo">
+            <img src="./image/ava.JPG" alt="Photo">
             <section class="contact">
                 <h2> Contact</h2>
                 <ul class="contact_items">
-                   <li> Linkedin :  <a href="https://www.linkedin.com/in/viktor-oleshkevich-266604180"> here ! </a></li>            
-                   <li> Email  <a href="#"> ecartman41@gmail.com </a></li>            
-                   <li> Address:  Belarus, Minsk </li>            
+                   <li class="linkedin"> Linkedin :  <a href="https://www.linkedin.com/in/viktor-oleshkevich-266604180"> here ! </a></li>            
+                   <li class="email"> Email  <a href="#"> ecartman41@gmail.com </a></li>            
+                   <li class="location"> Address:  Belarus, Minsk </li>            
                 </ul>
             </section>
             <section class="education">
@@ -43,8 +50,7 @@
         </div>
             <section class="About_me">
                 <h2>About me</h2>
-                <p> I like to study and learn something new. I like to read books, do physical education, 
-                    listen to music of different genres. I'm fond of good cars and bikes. I lead active and 
+                <p> I like to study and learn something new. I lead active and 
                     healhy lifestyle. I like to work and see the results of my work.
                     Since childhood, I have had a predisposition to work with electronics and computers. I 
                     like to disassemble, assemble and configure something. I can build, configure, solve
@@ -55,15 +61,15 @@
                 <ul class="skills_items">
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
-                    <li>React</li>
+                    <li>React/Redux</li>
                     <li>TypeScript</li>
+                    <li>English: A2</li>
                   
                 </ul>
             </section>
             <section class="key_strengths">
                 <h2>Key strengths</h2>
-                <ul class="key_strengths_items">
-                    <li >Hardworking</li>
+                <ul class="key_strengths_items">                    
                     <li >Responsible</li>
                     <li >Sociable</li>
                     <li >Quick learner</li>
@@ -75,51 +81,29 @@
             <section class="code_example">
                 <h2>Code Example</h2>
                 <details class="dropdown">
-                    <summary> ▼ info</summary>
-                    <pre class="code_in_dropdown">let message = document.querySelector('.message')
-                        let addMessage = document.querySelector('.addMessage')
-                        let todo = document.querySelector('.todo')
+                    <summary> ▼ Code</summary>
+                    <pre> <code>function cache(func) {
+                        let resMap = new Map()
                         
-                        let state =[];
-                        function  addPost(){
-                            if(message.value!='') {
-                                state.push(message.value)
-                            }
-                            message.value = '' ;
-                         console.log(state)
-                            DisplayMessage();
-                        }
-                        
-                        function  DisplayMessage() {
-                            let text ='';
-                            state.forEach(p => {
-                                text += /* validator doesn't want pass my template string*/`
-                                todo.innerHTML = text;
-                            })
-                        }
-                        
-                         document.querySelector('.Title').addEventListener('mouseenter',() =>
-                        {
-                         document.querySelector('.Title').style = 'color:green'
-                        })
-                        
-                        addMessage.addEventListener('click', addPost)
+                        return function (...args){
+                          let keyArgs = JSON.stringify(args)
+                          if(resMap.has(keyArgs)){
+                            return resMap.get(keyArgs)
+                           }
+                          let result = func(...args);
+                          resMap.set(keyArgs, result)
+                          return result
+                        }} </code>
                         </pre>
                 </details>
-            </section>
-        </div>
-        
+            </section>           
+        </div>        
     </main>
-    <footer class="footer">
-        
-        <a target="_blank" href="https://github.com/BlackHatMan"> Github</a>
-        <p> 2021</p>
-        
-        <a class="rs_link" target="_blank" href="https://rs.school/"> </a> 
-    </footer>
-    
-    
+    <footer class="footer">        
+        <a class="github_link" target="_blank" href="https://github.com/BlackHatMan"> Github</a>
+        <p> 2021</p>        
+        <a class="rs_link" target="_blank" href="https://rs.school/"></a> 
+    </footer>   
+    <script> console.log('есть все кроме трех пунктов: видеорезюме -10, ссылок на выполненные проекты -10, меню бургер -10. итого 130 баллов')</script>
 </body>
-
-
 </html>
