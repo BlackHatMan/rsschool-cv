@@ -24,8 +24,8 @@
             <section class="contact">
                 <h2> Contact</h2>
                 <ul class="contact_items">
-                   <li class="linkedin"> Linkedin :  <a href="https://www.linkedin.com/in/viktor-oleshkevich-266604180"> here ! </a></li>            
-                   <li class="email"> Email  <a href="#"> ecartman41@gmail.com </a></li>            
+                   <li class="linkedin"> Linkedin :  <a target="blank" href="https://www.linkedin.com/in/viktor-oleshkevich-266604180"> here! </a></li>            
+                   <li class="email"> Email  <a target="blank" href="mailto:ecartman41@gmail.com">ecartman41@gmail.com</a></li>            
                    <li class="location"> Address:  Belarus, Minsk </li>            
                 </ul>
             </section>
@@ -35,7 +35,7 @@
                    <li class="education_item"> 2013-2018 <br> P.O.Sukhoi State Technical University of Gomel,
 
                     Power supply for industrial enterprises</li>            
-                   <li class="education_item"> 2021 <br>  <a href="https://rs.school/"> RS School </a> : in progress</li>            
+                   <li class="education_item"> 2021 <br>  <a target="blank"href="https://rs.school/"> RS School </a> : in progress</li>            
                            
                 </ul>
             </section>
@@ -82,18 +82,20 @@
                 <h2>Code Example</h2>
                 <details class="dropdown">
                     <summary> ▼ Code</summary>
-                    <pre> <code>function cache(func) {
-                        let resMap = new Map()
-                        
-                        return function (...args){
-                          let keyArgs = JSON.stringify(args)
-                          if(resMap.has(keyArgs)){
-                            return resMap.get(keyArgs)
-                           }
-                          let result = func(...args);
-                          resMap.set(keyArgs, result)
-                          return result
-                        }} </code>
+ <pre> <code>
+function cache(func) {
+    let resMap = new Map()
+    
+    return function (...args) {
+        let keyArgs = JSON.stringify(args)
+         if (resMap.has(keyArgs)) {
+            return resMap.get(keyArgs)
+         }
+         let result = func(...args);
+         resMap.set(keyArgs, result)
+         return result
+     }
+  }    </code>
                         </pre>
                 </details>
             </section>           
@@ -104,6 +106,6 @@
         <p> 2021</p>        
         <a class="rs_link" target="_blank" href="https://rs.school/"></a> 
     </footer>   
-    <script> console.log('есть все кроме трех пунктов: видеорезюме -10, ссылок на выполненные проекты -10, меню бургер -10. итого 130 баллов')</script>
+    <script> console.log('есть все кроме трех пунктов: видеорезюме -10, ссылок на выполненные проекты -10, меню бургер -10. итого 130 баллов.')</script>
 </body>
 </html>
